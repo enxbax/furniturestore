@@ -1,0 +1,68 @@
+    [
+        {
+        "id": 1,
+        "category": "Диваны",
+        "name": "Диван Milano",
+        "price": "699 €",
+    
+        "preview": "images/products/milano/1.jpg",
+    
+        "images": [
+            "images/products/milano/1.jpg",
+            "images/products/milano/2.jpg",
+            "images/products/milano/3.jpg"
+        ],
+    
+        "description": "Современный угловой диван с мягкой тканевой обивкой. Отлично подходит для гостиной.",
+    
+        "sizes": "260 × 180 см",
+    
+        "material": "Ткань",
+    
+        "color": "Серый"
+        },
+    
+        {
+        "id": 2,
+        "category": "Кровати",
+        "name": "Кровать Loft",
+        "price": "549 €",
+    
+        "preview": "images/products/loft/1.jpg",
+    
+        "images": [
+            "images/products/loft/1.jpg",
+            "images/products/loft/2.jpg"
+        ],
+    
+        "description": "Двуспальная кровать с высоким изголовьем.",
+    
+        "sizes": "180 × 200 см",
+    
+        "material": "ЛДСП",
+    
+        "color": "Белый"
+        },
+    
+        {
+        "id": 3,
+        "category": "Шкафы",
+        "name": "Шкаф Oslo",
+        "price": "499 €",
+    
+        "preview": "images/products/oslo/1.jpg",
+    
+        "images": [
+            "images/products/oslo/1.jpg",
+            "images/products/oslo/2.jpg"
+        ],
+    
+        "description": "Большой трехстворчатый шкаф с зеркалом.",
+    
+        "sizes": "220 × 180 см",
+    
+        "material": "ЛДСП",
+    
+        "color": "Белый"
+        }
+    ]
