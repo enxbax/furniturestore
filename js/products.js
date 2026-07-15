@@ -1,13 +1,4 @@
-const products = [
-  {
-      id: 6,
-      name: "Капри",
-      category: "Модульные гостинные",
-      price: "8000",
-      image: "images/products/photo_2026-02-28_19-57-04.jpg",
-      description: "Характеристики: Направляющие-Шариковые, Размер Ш*В*Д(Г) - 2100х1820х420, Материал - ЛДСП/ЛДСП, Размер ниши под телевизор - мм975х825х425, Гарантия - 12 месяцев, Цвет - любой на выбор"
-    }
-  ];
+
   
   const container = document.getElementById("products");
   
@@ -21,8 +12,7 @@ const products = [
   
   <div class="card">
   
-  <img src="${product.image}" alt="${product.name}">
-  
+  <img src="${product.preview}" alt="${product.name}">  
   <div class="card-body">
   
   <h3>${product.name}</h3>
