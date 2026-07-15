@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MEBEL HAUS</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<header>
+
+<div class="container">
+
+<div class="logo">
+🛋️ Мебельный Магазин
+Ул. Калинина Д. 45
+</div>
+
+<div class="contacts">
+
+<a href="tel:+7 913 005 03 18" class="phone">
+<i class="fa-solid fa-phone"></i>
++7 913 005 03 18
+</a>
+
+<div class="social">
+
+<a href="#">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<a href="https://t.me/mebelniMaster" target="_blank">
+    <i class="fa-brands fa-telegram"></i>
+</a>
+
+<a href="#">
+<img src="images\max_gosklyuch-news.png" alt="Max">
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="overlay">
+
+<h1>
+Мебель в Здвинске
+</h1>
+
+<p>
+
+Большой выбор мебели
+по доступным ценам.
+
+</p>
+
+<div class="phone-box">
+
+    <p class="phone-title">
+        Для заказа звоните
+    </p>
+
+    <h2 id="phoneNumber">
+        +7 913 005 03 18
+    </h2>
+
+    <button id="copyPhone" class="call">
+        📋 Скопировать номер
+    </button>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="categories">
+
+<h2>
+
+Каталог
+
+</h2>
+
+<div class="buttons">
+
+    <button onclick="filterProducts('Все')">Все</button>
+    
+    <button onclick="filterProducts('Диваны')">Диваны</button>
+    
+    <button onclick="filterProducts('Кровати')">Кровати</button>
+    
+    <button onclick="filterProducts('Шкафы')">Шкафы</button>
+    
+    <button onclick="filterProducts('Кухни')">Кухни</button>
+    
+    <button onclick="filterProducts('Столы')">Столы</button>
+    
+    <button onclick="filterProducts('Комоды')">Комоды</button>
+
+    <button onclick="filterProducts('Модульные гостинные')">Модульные гостинные</button>
+
+    </div>
+
+</section>
+
+<section class="products">
+
+<div id="products">
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="footer-phone">
+
+☎ Для заказа звоните или пишите
+
+<h2>
+
++7 913 005 03 18
+
+</h2>
+
+<div class="footer-social">
+
+<a href="#">
+<i class="fa-brands fa-whatsapp"></i>
+WhatsApp
+</a>
+
+<a href="https://t.me/mebelniMaster">
+<i class="fa-brands fa-telegram"></i>
+Telegram
+</a>
+
+<a href="#">
+<img src="images/max_gosklyuch-news.png" alt="Max">MAX
+</a>
+
+</div>
+
+</div>
+
+</footer>
+
+<script src="js/products.js"></script>
+
+</body>
+</html>
