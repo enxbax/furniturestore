@@ -21,9 +21,9 @@
   
   <div class="price">${product.price}</div>
   
-  <a class="more" href="product.html?id=${product.id}">
-  Подробнее
-  </a>
+    <a class="more" href="product.html?id=${product.id}&cat=${encodeURIComponent(product.category)}&sub=${encodeURIComponent(product.subcategory)}">
+    Подробнее
+    </a>
   
   </div>
   

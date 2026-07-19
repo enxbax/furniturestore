@@ -1,5 +1,6 @@
 const params = new URLSearchParams(window.location.search);
-
+const category = params.get("cat");
+const subcategory = params.get("sub");
 const id = Number(params.get("id"));
 
 const product = products.find(p => p.id === id);
@@ -45,5 +46,13 @@ if (!product) {
         }
 
     });
+
+}
+const backButton = document.getElementById("backButton");
+
+if (backButton && category && subcategory) {
+
+    backButton.href =
+        `catalog.html?cat=${encodeURIComponent(category)}&sub=${encodeURIComponent(subcategory)}`;
 
 }
