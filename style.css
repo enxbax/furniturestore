@@ -1,0 +1,729 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#222;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+header{
+    background:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+}
+
+.contacts{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+.phone{
+    text-decoration:none;
+    color:#111;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.phone i{
+    color:#0a7c2f;
+    margin-right:8px;
+}
+
+.social{
+    display:flex;
+    gap:15px;
+}
+
+.social a{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#eee;
+    text-decoration:none;
+    color:#333;
+    font-size:22px;
+    transition:.3s;
+    overflow: hidden;
+}
+.social a img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;        /* Заполняет весь круг без искажения пропорций */
+}
+
+.social a:hover{
+    transform:scale(1.1);
+    background:#222;
+    color:#fff;
+}
+
+.hero{
+    height:650px;
+    background:url("../images/hero.jpg") center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay{
+    background:rgba(255,255,255,.9);
+    padding:60px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.overlay h1{
+    font-size:54px;
+    margin-bottom:20px;
+}
+
+.overlay p{
+    font-size:22px;
+    margin-bottom:35px;
+}
+
+.call{
+    display:inline-block;
+    background:#111;
+    color:white;
+    text-decoration:none;
+    padding:18px 40px;
+    border-radius:10px;
+    font-size:20px;
+    transition:.3s;
+}
+
+.call:hover{
+    background:#444;
+}
+
+.categories{
+    width:90%;
+    max-width:1200px;
+    margin:70px auto;
+}
+
+.categories h2{
+    font-size:38px;
+    margin-bottom:25px;
+}
+
+.buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.buttons button{
+    padding:14px 28px;
+    border:none;
+    border-radius:10px;
+    background:white;
+    cursor:pointer;
+    font-size:17px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.buttons button:hover{
+    background:#222;
+    color:white;
+}
+
+.products{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    margin-bottom:80px;
+}
+
+#products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    display: flex;
+    flex-direction: column;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    height:100%;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+.card h3{
+    min-height: 72px;
+    margin-bottom: 10px;
+}
+.card p{
+    flex: 1;
+    margin-bottom: 15px;
+}
+
+.card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.card-body{
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card h3{
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+.price{
+    margin-top: auto;
+    font-size:20px;
+    color:#c98a00;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.more{
+    display:block;
+    width:100%;
+    text-align:center;
+    text-decoration:none;
+    background:#111;
+    color:white;
+    padding:15px;
+    border-radius:8px;
+    transition:.3s;
+    margin-top: 15px;
+}
+
+.more:hover{
+    background:#444;
+}
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.footer-phone h2{
+    font-size:40px;
+    margin:20px 0;
+}
+
+.footer-social{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.footer-social a {
+    color: white;
+    text-decoration: none;
+    background: #333;
+    
+    /* 1. Позволяем кнопке растягиваться под текст */
+    width: auto; 
+    height: 45px;
+    
+    /* 2. Делаем аккуратные овальные края и отступы по бокам */
+    border-radius: 25px; 
+    padding: 0 20px;
+    
+    /* 3. Выстраиваем иконку и текст строго в одну линию */
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; /* Зазор между иконкой и словом */
+    
+    font-size: 16px;
+    transition: .3s;
+  }
+  
+  /* Настройка для первых двух шрифтовых иконок */
+  .footer-social a i {
+    font-size: 20px; /* Увеличиваем размер Font Awesome иконок */
+  }
+  
+  /* Настройка для третьей картинки-иконки */
+  .footer-social a img {
+    width: 24px;   /* Задаем ей такой же пропорциональный размер */
+    height: 24px;
+    object-fit: cover;
+    border-radius: 50%; /* Делаем круглым только само изображение внутри */
+  }
+  
+.footer-social a:hover{
+    background:#555;
+}
+
+@media(max-width:900px){
+
+header .container{
+    flex-direction:column;
+    gap:20px;
+}
+
+.contacts{
+    flex-direction:column;
+}
+
+.overlay{
+    width:90%;
+    padding:35px;
+}
+
+.overlay h1{
+    font-size:38px;
+}
+
+.overlay p{
+    font-size:18px;
+}
+
+.phone{
+    font-size:18px;
+}
+
+}
+.phone-box{
+    margin-top:40px;
+    text-align:center;
+}
+
+.phone-title{
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+#phoneNumber{
+    font-size:42px;
+    color:#f80101;
+    margin-bottom:25px;
+}
+/* ===== Страница товара ===== */
+
+.product-container{
+    max-width:1200px;
+    margin:50px auto;
+    padding:20px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:start;
+}
+
+.gallery{
+    text-align:center;
+}
+
+#mainImage{
+    width:100%;
+    max-width:550px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+#thumbs{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.thumb{
+    width:80px;
+    height:80px;
+    object-fit:cover;
+    border-radius:10px;
+    cursor:pointer;
+    border:2px solid transparent;
+    transition:.2s;
+}
+
+.thumb:hover{
+    border-color:#c79a2b;
+    transform:scale(1.05);
+}
+
+.info h1{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.info .price{
+    font-size:34px;
+    color:#c79a2b;
+    font-weight:bold;
+    margin-bottom:25px;
+}
+
+.info h3{
+    margin-top:25px;
+    margin-bottom:15px;
+}
+
+#sizes p{
+    margin:8px 0;
+    padding:10px;
+    background:#f5f5f5;
+    border-radius:8px;
+}
+.call:hover{
+    background:#444;
+}
+
+@media(max-width:900px){
+
+.product-container{
+
+grid-template-columns:1fr;
+
+}
+
+.info{
+
+text-align:center;
+
+}
+
+}
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.category-card{
+    text-decoration:none;
+    color:#222;
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.category-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.category-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.category-card h3{
+    text-align:center;
+    padding:18px;
+    font-size:24px;
+}
+/* ---------- Хлебные крошки ---------- */
+
+.breadcrumbs{
+
+    margin:15px 0 25px;
+    
+    font-size:15px;
+    
+    color:#666;
+    
+    }
+    
+    .breadcrumbs a{
+    
+    text-decoration:none;
+    
+    color:#666;
+    
+    }
+    
+    .breadcrumbs a:hover{
+    
+    color:#000;
+    
+    }
+    
+    /* ---------- Подкатегории ---------- */
+    
+    #subcategories{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+        gap:25px;
+        margin-top:30px;
+    }
+    
+    .subcategory-card{
+        display:block;
+        text-decoration:none;
+        color:#222;
+        background:#fff;
+        border-radius:15px;
+        overflow:hidden;
+        box-shadow:0 5px 15px rgba(0,0,0,.12);
+        transition:.3s;
+    }
+    
+    .subcategory-card:hover{
+        transform: scale(1.02);
+        box-shadow: 0 10px 25px rgba(0,0,0,.18);
+    }
+    
+    .subcategory-card img{
+        width:100%;
+        height:220px;
+        object-fit:cover;
+    }
+    
+    .subcategory-card h3{
+        padding:18px;
+        text-align:center;
+        font-size:28px;
+    }
+    .back-button{
+        display:inline-block;
+        margin-top:30px;
+        background:#1f1f1f;
+        color:#fff;
+        padding:15px 30px;
+        border-radius:10px;
+        text-decoration:none;
+        font-size:20px;
+        transition:.2s;
+    }
+    
+    .back-button:hover{
+        background:#333;
+    }
+    /* ========================= */
+/* Адаптация под телефон */
+/* ========================= */
+
+@media (max-width:768px){
+
+    .container{
+        width:95%;
+        margin:auto;
+    }
+    
+    header .container{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+        text-align:center;
+    }
+    
+    .logo{
+        font-size:28px;
+    }
+    
+    .contacts{
+        width:100%;
+    }
+    
+    .phone{
+        font-size:22px;
+    }
+    
+    .social{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+    
+    .buttons{
+        display:flex;
+        overflow-x:auto;
+        gap:10px;
+        padding-bottom:10px;
+    }
+    
+    .buttons button{
+        flex:none;
+    }
+    
+    #products{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+    
+    .card{
+        width:100%;
+    }
+    
+    .product-container{
+        display:flex;
+        flex-direction:column;
+        padding:20px;
+    }
+    
+    .gallery img{
+        width:100%;
+        height:auto;
+    }
+    
+    .info{
+        width:100%;
+    }
+    
+    #thumbs{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+    
+    .subcategory-card img{
+        height:180px;
+    }
+    
+    .back-button{
+        width:100%;
+        text-align:center;
+    }
+    
+    }
+    @media (min-width:769px) and (max-width:1100px){
+
+        #products{
+        
+        display:grid;
+        
+        grid-template-columns:repeat(2,1fr);
+        
+        gap:20px;
+        
+        }
+        
+        }
+.number-product{
+    display:inline-block;
+        margin-top:30px;
+        background:#1f1f1f;
+        color:#fff;
+        padding:15px 30px;
+        border-radius:10px;
+        text-decoration:none;
+        font-size:20px;
+        transition:.2s;
+}
+.scroll-bottom{
+
+    position:fixed;
+    
+    right:25px;
+    
+    bottom:25px;
+    
+    width:55px;
+    
+    height:55px;
+    
+    border:none;
+    
+    border-radius:50%;
+    
+    background:#111;
+    
+    color:#fff;
+    
+    font-size:28px;
+    
+    cursor:pointer;
+    
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
+    
+    transition:.25s;
+    
+    z-index:999;
+    
+    }
+    
+    .scroll-bottom:hover{
+    
+    transform:scale(1.1);
+    
+    background:#333;
+    
+    }
+    .scroll-top{
+
+position:fixed;
+
+right:25px;
+
+bottom:25px;
+
+width:55px;
+
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:#111;
+
+color:#fff;
+
+font-size:28px;
+
+cursor:pointer;
+
+box-shadow:0 5px 15px rgba(0,0,0,.25);
+
+display:none;
+
+transition:.3s;
+
+z-index:999;
+
+}
+
+.scroll-top:hover{
+
+background:#333;
+
+transform:scale(1.08);
+
+}
