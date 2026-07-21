@@ -90,3 +90,51 @@ if(phoneButton){
     });
 
 }
+const scrollBtn = document.getElementById("scrollBottom");
+
+if(scrollBtn){
+
+    scrollBtn.addEventListener("click", () => {
+
+        window.scrollTo({
+
+            top: document.body.scrollHeight,
+
+            behavior: "smooth"
+
+        });
+
+    });
+
+}
+const scrollTopBtn = document.getElementById("scrollTop");
+
+if(scrollTopBtn){
+
+    window.addEventListener("scroll", function(){
+
+        if(window.scrollY > 500){
+
+            scrollTopBtn.style.display = "block";
+
+        }else{
+
+            scrollTopBtn.style.display = "none";
+
+        }
+
+    });
+
+    scrollTopBtn.onclick = function(){
+
+        window.scrollTo({
+
+            top:0,
+
+            behavior:"smooth"
+
+        });
+
+    };
+
+}
